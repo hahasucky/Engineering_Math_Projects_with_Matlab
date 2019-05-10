@@ -110,3 +110,5 @@ legend('location', 'northwest')
 
 % funded in 2020 :  1.6181e+04
 % non-funded in 2020 : 5.9335e+04
+
+% hint : "What would help the most in reality prediction."
