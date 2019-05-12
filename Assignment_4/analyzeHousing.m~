@@ -1,5 +1,5 @@
 % Basic clearing
-% clear all; clear; clc;
+clear all; clear; clc;
 
 
 % Load data
@@ -149,7 +149,7 @@ end
 format long
 r2orig(:, 4) = abs(r2orig(:,4));
 rank = sortrows(r2orig,4);
-rank; % three cols combination mapped to fit quality sorted using fit quality in asc. order.
+rank % three cols combination mapped to fit quality sorted using fit quality in asc. order.
 
 %       4. make final variable 'r2orig' leaving only fit-quality sorted in ascending order.
 r2orig = rank(:,4)
@@ -158,10 +158,9 @@ r2orig = rank(:,4)
 
 %   4). Which dimensions consistently have the lowest residual?
 % Considering Top 10 fit quality
-% dimension 2, 7 ,13 make 4, 5, 4 appearances respectively.
+% dimension 2, 7 ,13 make 
 
 % Can you interpret them using the names and descriptions in the file? 
 % Insert all interpretations as comments into the script.
-txt = sprintf('The following three elements \n%s(%s),\n%s(%s),\n%s(%s)\nexplains price relatively well.', category(2), description(2), category(7), description(7), category(13), description(13));
-fprintf(txt)
+
 
