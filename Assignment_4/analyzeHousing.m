@@ -64,11 +64,7 @@ clearvars filename delimiter formatSpec fileID dataArray ans raw col numericData
 
 % Divide 'data' into 'pred' and 'price'
 % 1). 'pred'
-pred = ones(206,13);
-    for i = [1:13]
-        col = data(:,i);
-        pred(:,i) = col; 
-    end
+pred = data(:,1:13);
 % 2). 'price'
 price = data(:,14);
 
@@ -217,14 +213,14 @@ rank = sortrows(copy_r2_orig,4);
 
 % If we view the variable 'rank', which ranks the
 % combination of column in ascending order of residual,
-% column 13 is included in every combination af far as rank 66
-% column 4 also appears in every combination as far as rank 11
+% column 13 appears in every combination as far as rank 66.
+% column 4 also appears in every combination as far as rank 11.
 
 % 3. Can you interpret them using the names and descriptions in the file?
 
 % (Insert all interpretations as comments into the script)
 % The answer is given as output of 'txt' to use string values loaded from
 % txt. file
-txt = sprintf('The following two elements : \n%s(%s),\n%s(%s),\nhave the most influence in explaining the value of %s(%s).', category(4), description(4), category(13), description(13),category(14), description(14));
+txt = sprintf('The following two elements : \n%s(%s),\n%s(%s),\nhave the most influence among 13 dimensions in explaining the value of %s(%s).', category(4), description(4), category(13), description(13),category(14), description(14));
 fprintf(txt)
 

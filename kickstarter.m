@@ -30,7 +30,7 @@ title('\fontsize{16}polynomials with degree 1 to 7')
 grid on
 
 % polynomial fitting
-for i = 1:7
+for i = [2,4]
     
     A = years.^[0:i];       % a Vandermonde matrix
 
