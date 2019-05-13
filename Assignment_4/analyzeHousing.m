@@ -151,7 +151,7 @@ whole_pred_residual = norm(P*a - price);
 
 %   2). What is the fit-quality of this full model?? Better or worse – and why?
 %   => The fit quality of the 'full model' is 63.3857
-%   => This is better because it uses all dimension to address the price.
+%   => This is better because it uses all dimension to fit the price.
 %   => On the other hand, PCA with 3PCs, only account for 70% of total
 %   variation of data.
 
