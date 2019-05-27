@@ -5,7 +5,7 @@ function w = myPerceptron(x,y,maxIter,doShuffle,doPlot)
 w = zeros(size(x,2),1);
 
 % check outputs
-outputs = y.*(x*w)<=0; % find all the point for which the mentioned det below zero : mis classi data ; exist 1
+outputs = y.*(x*w)<=0; % find all the point for which the mentioned det(판별식) below zero : mis classi data ; exist 1
 
 iter=1;
 
